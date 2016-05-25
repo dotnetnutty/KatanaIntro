@@ -2,8 +2,6 @@
 using Owin;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace KatanaIntro
@@ -74,9 +72,12 @@ namespace KatanaIntro
             {
                 return writer.WriteAsync("<h1>Hello World</h1>");
             }
-
-            // goes to next step in pipeline
-            //await _next(environment);
         }
+
+        //public async Task Invoke(IDictionary<string, object> environment)
+        //{
+        //    // goes to next step in pipeline
+        //    //await _next(environment);
+        //}
     }
 }
