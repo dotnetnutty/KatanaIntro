@@ -10,9 +10,9 @@ namespace KatanaIntro
     /// To get pretty welcome page:
     /// 3. Install-Package Microsoft.Owin.Diagnostics and then app.UseWelcomePage()
     /// </summary>
-    class Program
+    class ProgramSimple
     {
-        static void Main(string[] args)
+        static void NotMain(string[] args)
         {
             string url = "http://localhost:8080";
 
