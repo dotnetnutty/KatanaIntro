@@ -10,26 +10,27 @@ namespace KatanaIntro
     /// To get pretty welcome page:
     /// 3. Install-Package Microsoft.Owin.Diagnostics and then app.UseWelcomePage()
     /// </summary>
-    class ProgramSimple
-    {
-        static void NotMain(string[] args)
-        {
-            string url = "http://localhost:8080";
 
-            using (WebApp.Start<Startup>(url))
-            {
-                Console.WriteLine("Server started...");
-                Console.ReadKey();
-                Console.WriteLine("Server stopped.");
-            }
-        }
-    }
+    //class ProgramSimple
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string url = "http://localhost:8080";
 
-    public class Startup
+    //        using (WebApp.Start<Startup>(url))
+    //        {
+    //            Console.WriteLine("Server started...");
+    //            Console.ReadKey();
+    //            Console.WriteLine("Server stopped.");
+    //        }
+    //    }
+    //}
+
+    public class StartupX
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseWelcomePage();
+            //app.UseWelcomePage();
 
             //app.Run(ctx =>
             //{
